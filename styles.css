@@ -1,0 +1,111 @@
+body {
+    font-family: 'Noto Sans KR', "맑은 고딕", sans-serif;
+}
+* {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    width: 1200px;
+    height: 69px;
+    /*background: #ccc;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+
+header .lang {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    
+}
+
+header nav {
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+header nav ul li {
+    display: inline;
+    margin: 1em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header .lang {
+    font-size: 13px;
+}
+
+header nav .depth1 {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: 250px;
+}
+
+header nav .depth1 > li {
+    position: relative;
+    width: 25%;
+}
+
+header nav .depth1 > li > a {
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header nav .depth2 > li a {
+    display: block;
+    padding: 10px;
+    background-color: #efefef;
+    color: #444;
+    font-size: small;
+
+}
+
+header nav .depth2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+header nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+
+header nav .depth2 > li > a:hover {
+    border-bottom:1px solid #ccc ;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: small;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
